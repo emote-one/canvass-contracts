@@ -1,0 +1,35 @@
+{
+  "name": "@emote/canvass-smartcontracts",
+  "version": "1.0.0",
+  "description": "Canvass Smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test test/Canvass.js",
+    "deploy-to-hardhat": "npx hardhat run scripts/deployCanvass.js --network hardhat",
+    "deploy-to-test": "npx hardhat run scripts/deployCanvass.js --network polygonMumbai",
+    "verify-on-test": "npx hardhat verify --contract contracts/Canvass.sol:Canvass --show-stack-traces --network polygonMumbai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emote-one/canvass-contracts.git"
+  },
+  "keywords": [
+    "canvass",
+    "polling",
+    "voting"
+  ],
+  "author": "Ashfaq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emote-one/canvass-contracts/issues"
+  },
+  "homepage": "https://github.com/emote-one/canvass-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.16.0",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-gas-reporter": "^1.0.9"
+  }
+}

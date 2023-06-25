@@ -1,0 +1,8 @@
+[
+    "constructor()",
+    "event adminModified(address indexed,address indexed,bool,uint256)",
+    "function addAdmin(address)",
+    "function isSignerAdmin() view returns (bool)",
+    "function removeAdmin(address)",
+    "function whoOwnsThis() view returns (address)"
+]
